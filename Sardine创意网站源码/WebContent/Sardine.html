@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sardine,这一次只为改变世界！</title>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script type="text/javascript" src="js/jquery.roundabout.js"></script>
+<script type="text/javascript" src="js/jquery.roundabout-shapes.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet"  href="css/main_style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<!--javascript代码-->
+<script type="text/javascript">
+	window.onload = function(){
+		var oUL =  document.getElementsByClassName("nav")[0];
+		var oLIs = oUL.getElementsByTagName("li");
+		var wrapDiv = document.getElementsByClassName("wrap_nav")[0];
+		var oFirNav = document.getElementsByClassName("fir_nav")[0];
+		var oSecNav = document.getElementsByClassName("sec_nav")[0];
+		var oThirNav = document.getElementsByClassName("thir_nav")[0];
+		var oFourNav = document.getElementsByClassName("four_nav")[0];
+		var oFiveNav = document.getElementsByClassName("five_nav")[0];
+		//遍历每个li并且添加监听。
+		function change(obj,x){
+				if(x<0){
+					wrapDiv.style.height=0;
+					clearInterval(obj.time);
+				}
+				obj.time = setInterval(function(){
+				wrapDiv.style.height = wrapDiv.offsetHeight+x+"px";
+				if (wrapDiv.offsetHeight>=100) {
+					  clearInterval(obj.time);
+				}
+				if (wrapDiv.offsetHeight<=0) {
+					  wrapDiv.style.height=0;
+					  clearInterval(obj.time);
+				}
+			},1);
+		}
+		
+		oLIs[0].onmouseover = function(){
+				this.style.background = "#F90";
+				oFirNav.style.display = "block";
+				oSecNav.style.display = "none";
+				oThirNav.style.display = "none";
+				oFourNav.style.display = "none";
+				oFiveNav.style.display = "none";
+				change(this,2);
+		}
+		oLIs[0].onmouseout = function(){
+				this.style.background = "#FFF";	
+				change(this,-100);
+		}
+		oLIs[1].onmouseover = function(){
+				this.style.background = "#F90";
+				change(this,2);
+				oFirNav.style.display = "none";
+				oSecNav.style.display = "block";
+				oThirNav.style.display = "none";
+				oFourNav.style.display = "none";
+				oFiveNav.style.display = "none";
+				
+		}
+		oLIs[1].onmouseout = function(){
+				this.style.background = "#FFF";	
+				change(this,-100);
+		}
+		oLIs[2].onmouseover = function(){
+				this.style.background = "#F90";
+				change(this,2);
+				oFirNav.style.display = "none";
+				oSecNav.style.display = "none";
+				oThirNav.style.display = "block";
+				oFourNav.style.display = "none";
+				oFiveNav.style.display = "none";
+				
+		}
+		oLIs[2].onmouseout = function(){
+				this.style.background = "#FFF";	
+				change(this,-100);
+		}
+		oLIs[3].onmouseover = function(){
+				this.style.background = "#F90";
+				change(this,2);
+				oFirNav.style.display = "none";
+				oSecNav.style.display = "none";
+				oThirNav.style.display = "none";
+				oFourNav.style.display = "block";
+				oFiveNav.style.display = "none";
+				
+		}
+		oLIs[3].onmouseout = function(){
+				this.style.background = "#FFF";	
+				change(this,-100);
+		}
+		oLIs[4].onmouseover = function(){
+				this.style.background = "#F90";
+				change(this,2);
+				oFirNav.style.display = "none";
+				oSecNav.style.display = "none";
+				oThirNav.style.display = "none";
+				oFourNav.style.display = "none";
+				oFiveNav.style.display = "block";
+				
+		}
+		oLIs[4].onmouseout = function(){
+				this.style.background = "#FFF";	
+				change(this,-100);
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="wrap">
+ 		<div id="header">
+        	<div class="header_nav">
+            	<span><a href="login.html">登录</a>&nbsp;||&nbsp;<a href="regist.html" target="_blank">注册</a></span>
+            	<img src="img/wechat.png" />
+                <img src="img/sina.png" />
+                <img src="img/in.png" />
+            </div>
+        	<img id="logo" src="img/logo.png" />
+            <span>SARDINE</span>
+            <ul class="nav">
+                    <li>首页</li>
+                    <li>产品推荐</li>
+                    <li>项目支持</li>
+                    <li>团队简介</li>
+                    <li>联系我们</li>
+            </ul>
+            <div class="wrap_nav">
+                <div class="fir_nav"><h2>欢迎访问Sardine！</h2></div>
+                <div class="sec_nav"><h2>网站前端业务（包括响应式）、服务器、音乐编曲、影像处理、视频制作。</h2></div>
+                <div class="thir_nav"><h2>本校计算机学院重点扶持与投资。本站相关项目均有项目组成员实现。</h2></div>
+                <div class="four_nav"><h2>Sardine工作团队创建于2015年12月，成员们年轻富有激情，热爱学习。为着自己的目标和理想而奋斗着。</h2></div>
+                <div class="five_nav"><h2>联系电话：17862807218 &nbsp QQ：230001053</h2>8</div>
+            </div>
+        </div>
+       	<div id="main">
+        	<!--图片3d轮番效果-->
+          	  <div id="warp_3d">
+            <div id="gla">
+                <div id="gla_box">
+                    <ul>
+                    
+                        <li>
+                            <div class="gla_inbox">
+                                <p>或许我们像仰望月光的雄鹿</p>
+                                <img src="img/3d_1.jpg" />
+                                <a href="ITDetail.aspx?ID=310">目标</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="gla_inbox">
+                                <p>也或是虔诚地遵循自己的信仰</p>
+                                <img src="img/3d_2.jpg" />
+                                <a href="ITDetail.aspx?ID=312">信仰</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="gla_inbox">
+                                <p>纵使经历风吹雨打</p>
+                                <img src="img/3d_3.jpg" />
+                                <a href="ITDetail.aspx?ID=313">磨砺</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="gla_inbox">
+                                <p>我们始终坚信光明就在远方</p>
+                                <img src="img/3d_4.jpg" />
+                                <a href="ITDetail.aspx?ID=314">磐石</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="gla_inbox">
+                                <p>为自己的理想和目标奋斗吧！</p>
+                                <img src="img/3d_5.jpg" />
+                                <a href="ITDetail.aspx?ID=315">成功</a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        	<div class="main_img">
+                <img id="img_1" src="img/1.jpg" />
+                <img id="img_2" src="img/2.png"/>
+                <img id="img_3" src="img/3.png"/>
+                <img id="img_4" src="img/4.jpg"/>
+            </div>
+            <div class="btn_img">
+            	<ul>
+                    <li><img src="img/btn1.png" /></li>
+                    <li><img src="img/btn2.png" /></li>
+                    <li><img src="img/btn3.png" /></li>
+                    <li><img src="img/btn4.png" /></li>
+                </ul>
+            	<img id="big_img" src="img/main_bottom.jpg" />
+            </div>
+        </div>
+ 		<div id="footer">
+        	<div class="erwei">
+            	二维码
+            </div>
+        	<dl class="foot_nav">
+            	<dt><h2>友情链接</h2></dt>
+                <dd><a href="http://www.baidu.com" target="_blank">百度</a></dd>
+                <dd><a href="http://www.sina.com" target="_blank">新浪</a></dd>
+                <dd><a href="http://www.qq.com" target="_blank">腾讯</a></dd>
+                <dd><a href="http://www.1688.com" target="_blank">阿里巴巴</a></dd>
+            </dl>
+            <dl class="foot_nav2">
+                <dd><a href="http://www.sohu.com" target="_blank">搜狐</a></dd>
+                <dd><a href="http://www.amazon.cn" target="_blank">亚马逊</a></dd>
+                <dd><a href="http://www.jd.com" target="_blank">京东</a></dd>
+                <dd><a href="http://www.suning.com" target="_blank">苏宁易购</a></dd>
+            </dl>
+            <p class="banhao">&copy;1996-2016 Sardine Corporation, All Rights Reserved</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    	//图片轮番效果实现。
+		//淡出函数
+		var i = 4;
+	    function Out(i){
+			$("#img_"+i).animate({
+				opacity:"0"
+			},3000,function(){
+				i--;
+				$("#img_"+i).animate({
+					opacity:"0"
+				},3000,function(){
+					i--;
+					$("#img_"+i).animate({
+						opacity:"0"
+					},3000,function(){
+						i--;
+						$("#img_"+i).animate({
+						opacity:"1"
+						},250,function(){
+							In(i);
+						});
+					});
+				});	
+			});
+		}
+		//淡入函数
+		function In(i){
+			$("#img_"+i).animate({
+				opacity:"1"
+			},250,function(){
+				i++;
+				$("#img_"+i).animate({
+					opacity:"1"
+				},3000,function(){
+					i++;
+					$("#img_"+i).animate({
+						opacity:"1"
+					},3000,function(){
+						i++;
+						$("#img_"+i).animate({
+						opacity:"1"
+						},3000,function(){
+							Out(i);
+						});
+					});
+				});	
+			});
+		}
+		Out(i);
+		
+		//图片按钮的动画效果
+		$(".btn_img ul li").each(function(index) {
+            $(this).hover(function(){
+				$(this).stop().animate({
+					left:"-30px",
+				},100)
+			},function(){
+				$(this).stop().animate({
+					left:"0px",
+				},100)
+			});
+        });
+    </script>
+</body>
+</html>

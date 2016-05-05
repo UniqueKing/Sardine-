@@ -1,0 +1,130 @@
+/*全局设置*/
+		body,img{margin:0px;padding:0px;}
+		body{font-family:微软雅黑;font-size:12px;}
+		a:link,a:visited{color:#cc0000;text-decoration:none;}
+		/*top样式*/
+		.top
+		{
+			width:1000px;
+			margin:0px auto;
+		}
+		.top .logoimg{
+			float:left;
+		}
+		.top .huanyingdl{
+			float:left;
+			height:58px;
+			padding:40px 20px 0px;
+			font-size:22px;
+			font-family:微软雅黑;
+			color:#ff8000;
+			cursor:default;
+		}
+		.clear1{clear:both;}
+		/*middle样式*/
+		.middle{
+			width:1366px;
+			height:477px;
+			background-color:#000000;
+			margin:0px auto;
+			position:relative;
+		}
+		.middle .shadingyu{
+			width:600px;
+			height:400px;
+			position:absolute;
+			left:100px;
+			top:30px;
+		}
+		/*登录样式*/
+		.middle .denglu{
+			background-color:#e8e8e8;
+			padding:20px;
+			marigin:0px auto;
+			width:300px;
+			height:360px;
+			position:absolute;
+			right:200px;
+			top:30px;
+		}
+		.denglutop{cursor:default;}
+		.tixing{
+			margin:10px auto;
+			padding-top:2px;
+			border:1px solid #ffb468;
+			width:300px;
+			height:18px;
+			font-family:黑体;
+			color:#1b1b1b;
+			text-align:center;
+			background-color:#ffc8ff;
+		}
+		/*登录内容样式*/
+		
+		.username{
+			margin-top:20px;
+			width:300px;
+			height:43px;
+			border:2px solid #6d7aed;
+			position:relative;
+			cursor:default;
+		}
+		.hint{
+			margin:5px 0px;
+			height:30px;
+			/* background:rgb(220,212,233); */
+			padding-left:8px;
+			padding-right:5px;
+			line-height:15px;
+		}
+		.hints{
+			background:rgb(220,212,233);
+		}
+		.userpwd{
+			
+			width:300px;
+			height:43px;
+			border:2px solid #6d7aed;
+			position:relative;
+			cursor:default;
+		}
+		.span1{
+			padding-right:2px;
+			text-align:right;
+			width:90px;
+			line-height:43px;
+			display:block;
+			font-size:23px;
+			border-right:2px solid #6d7aed;
+		}
+		.neirong{
+			width:201px;
+			height:38px;
+			position:absolute;
+			right:0px;
+			top:0px;
+			border:1px solid white;
+		}
+		.btn{
+			width:260px;
+			
+			text-align:center;
+			
+		}
+		.button{
+			font-size:25px;
+			font-family:宋体;
+			font-weight:bold;
+			color:white;
+			padding-left:30px;
+			letter-spacing:40px;
+			width:300px;
+			height:40px;
+			background-color:#ff0000;
+			cursor:pointer;
+		}
+		/*bottom样式*/
+		.bottom{
+			padding-top:20px;
+			text-align:center;
+		}

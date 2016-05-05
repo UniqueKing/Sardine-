@@ -1,0 +1,39 @@
+/* main CSS Document */
+	*{ padding:0; margin:0; font-family:"微软雅黑";}
+	#wrap{margin:0 auto; width:1300px;}
+	#header{ position:relative;}
+	#header .header_nav{ background:#CCC; overflow:hidden;}
+	#header .header_nav span{ display:block; float:right; margin-right:10px;}
+	.header_nav a:link{ color:#000; text-decoration:none;}
+	.header_nav a:visited{color:#000; text-decoration:none;}
+	.header_nav a:hover{ color:#FFF; text-decoration:underline;}
+	.header_nav a:active{ color:#CCC; text-decoration:underline;}
+	#header .header_nav img{ float:right; margin-right:10px; cursor:pointer;}
+	#logo{width:117px; height:117px;}
+	#header>span{ display:block; position:absolute; left:150px; top:50px; font-size:60px; font-family:"Comic Sans MS", cursive;}
+	.nav li{float:left; list-style:none; background:#FFF; width:120px; margin-left:130px; height:50px; line-height:50px; text-align:center; border-radius:10px; cursor:pointer;}
+	.nav {margin:0 auto;overflow:hidden; border-top:#F90 4px solid;border-bottom:#F90 4px solid;}
+	.wrap_nav{height:0px; overflow:hidden; margin:0 auto; width:1300px;}
+	.fir_nav{height:100px; background:#F90; margin-top:0px; border-radius:20px; text-align:center; line-height:100px; font-size:36px;}
+	.sec_nav{height:100px; background:#F90; margin-top:0px; border-radius:20px;text-align:center; line-height:100px; font-size:20px; display:none;}
+	.thir_nav{height:100px; background:#F90; margin-top:0px; border-radius:20px;text-align:center; line-height:100px; font-size:20px; display:none;}
+	.four_nav{height:100px; background:#F90; margin-top:0px; border-radius:20px; text-align:center; line-height:100px; font-size:15px;display:none;}
+	.five_nav{height:100px; background:#F90; margin-top:0px; border-radius:20px;text-align:center; line-height:100px; font-size:20px; display:none;}
+	/*主体部分*/
+	#main{ text-align:center;}
+	.main_img{overflow:hidden;height:465px; position:relative;}
+	.main_img img{  width:1300px;height:465px; position:absolute; left:0;}
+	.btn_img{ position:relative; overflow:hidden;}
+	.btn_img ul{ position:absolute; top:170px; left:100px; list-style:none; overflow:hidden;}
+	.btn_img li{float:left; margin-left:100px; cursor:pointer; position:relative;}
+	.btn_img #big_img{width:1300px;height:465px;}
+	.text_img{ background:#000;}
+	/*footer部分*/
+	#footer{background:#666; overflow:hidden}
+	.erwei{width:115px; height:115px; float:left; background:#00F;}
+	.foot_nav{float:left; margin-left:30px;}
+	.foot_nav2{float:left;margin-top:32px;}
+	#footer a:link{ color:#000; text-decoration:none;}
+	#footer a:visited{color:#000; text-decoration:none;}
+	#footer a:hover{color:#FFF; text-decoration:underline;}
+	.banhao{ clear:both; text-align:center;}

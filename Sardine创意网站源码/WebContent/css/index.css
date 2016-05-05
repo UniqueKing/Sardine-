@@ -1,0 +1,70 @@
+﻿/*全局*/
+*{
+	list-style:none;
+	text-decoration:none;
+	z-index:0;
+}
+img{
+	display:block;
+}
+.clear{
+	clear:both;
+}
+/*header*/
+#wrap_3d{
+	height:118px;
+}
+#wrap_3d *{
+	z-index:10;
+}
+/*首页图片滚动*/
+#gla{
+	border-radius:30px;
+	background:#D9F7F3;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+	height:400px;
+}
+#gla_box{
+	width:700px;
+	margin:auto;
+}
+.gla_inbox{
+	overflow:hidden;
+	position:relative;
+}
+.gla_inbox p{
+	text-indent:1em;
+	font-size:14px;
+	width:100%;
+	color:#FFFFFF;
+	line-height:30px;
+	background:#000000;
+}
+.gla_inbox a{
+	padding:5px;
+	display:block;
+	position:absolute;
+	top:220px;
+	left:90px;
+	color:#FFF;
+	font-size:30px;
+}
+.gla_inbox img{
+	width:100%;
+	height:100%;
+}
+.roundabout-holder {
+	height: 404px;
+	width: 700px;
+}
+.roundabout-moveable-item {
+	display:block;
+	height: 300px;
+	width: 500px;;
+	cursor: pointer;
+}
+.roundabout-in-focus {
+	cursor: auto;
+}
